@@ -20,7 +20,7 @@ Código | Complexidade
 :----- | :----------:
 `int max = 10;`| *1 instrução*
 `int i = 0;`| *1 instrução*
-`while(i < max)`| *$1 + n$ instruções*
+`while(i < max)`| $1 + n$ *instruções*
 `i++;`| *n instruções*
 
 Então, $x$ sendo o número total de instruções, temos:
@@ -33,9 +33,9 @@ Como $n=10$, temos:
 
 $x = 3 + 2.10$
 
-$ = 23$
+$= 23$
 
-Portanto, são *$23$ instruções* ao total.
+Portanto, são $23$ *instruções* ao total.
 ##### Complexidade:
 
 Código | Complexidade
@@ -49,11 +49,11 @@ Código | Complexidade
 Portanto, temos:
 
 
-$ T(n) = 1 + 1 + 1 + n + n$
+$T(n) = 1 + 1 + 1 + n + n$
 
-$ = 3 + 2n$ 
+$= 3 + 2n$ 
 
-$ = O(n) $
+$= O(n) $
 
 Onde $n = 10$.
 
