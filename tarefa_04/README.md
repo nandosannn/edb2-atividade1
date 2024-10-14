@@ -1,13 +1,14 @@
-# Tarefa 01
+# Tarefa 04
 
 ## :question: Problema:
 
 Calcule as quantidades de instruções, bem como a
 complexidade de pior caso $(O)$ do trecho:
 
-        int x = 0;
-        x = x + 1;
-        printf("%d", resultado);
+        int max = 10;
+        int i = 0;
+        while(i < max)
+                i++;
 
 <br>
 
@@ -15,17 +16,46 @@ complexidade de pior caso $(O)$ do trecho:
 
 ##### Quantidade de intruções:
 
-O trecho do código anterior possui *3 instruções* ao total.
+Código | Complexidade
+:----- | :----------:
+`int max = 10;`| *1 instrução*
+`int i = 0;`| *1 instrução*
+`while(i < max)`| *$1 + n$ instruções*
+`i++;`| *n instruções*
 
+Então, $x$ sendo o número total de instruções, temos:
+
+$x = 1+1+1+n+n$
+
+$= 3 + 2n$
+
+Como $n=10$, temos:
+
+$x = 3 + 2.10$
+
+$ = 23$
+
+Portanto, são *$23$ instruções* ao total.
 ##### Complexidade:
 
 Código | Complexidade
 :----- | :----------:
-`int x = 0;`| $O(1)$
-`x = x + 1;`| $O(1)$
-`printf("%d", resultado);`| $O(1)$
+`int max = 10;`| $O(1)$
+`int i = 0;`| $O(1)$
+`while(i < max)`| $O(n)$ + $O(1)$
+`i++;`| $O(n)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+
+Portanto, temos:
+
+
+$ T(n) = 1 + 1 + 1 + n + n$
+
+$ = 3 + 2n$ 
+
+$ = O(n) $
+
+Onde $n = 10$.
 
 
 

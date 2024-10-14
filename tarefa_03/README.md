@@ -1,13 +1,14 @@
-# Tarefa 01
+# Tarefa 03
 
 ## :question: Problema:
 
 Calcule as quantidades de instruções, bem como a
 complexidade de pior caso $(O)$ do trecho:
 
-        int x = 0;
-        x = x + 1;
-        printf("%d", resultado);
+        int max = 0;
+        int i = 0;
+        while(i < max)
+                i++;
 
 <br>
 
@@ -21,11 +22,17 @@ O trecho do código anterior possui *3 instruções* ao total.
 
 Código | Complexidade
 :----- | :----------:
-`int x = 0;`| $O(1)$
-`x = x + 1;`| $O(1)$
-`printf("%d", resultado);`| $O(1)$
+`int max = 0;`| $O(1)$
+`int i = 0;`| $O(1)$
+`while(i < max);`| $O(1)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+Portanto, temos:
+
+$ T(n) = 1+1+1$
+
+$= 3$
+
+$= O(1) $
 
 
 

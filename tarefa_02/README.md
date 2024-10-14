@@ -1,13 +1,19 @@
-# Tarefa 01
+# Tarefa 02
 
 ## :question: Problema:
 
 Calcule as quantidades de instruções, bem como a
 complexidade de pior caso $(O)$ do trecho:
 
-        int x = 0;
-        x = x + 1;
-        printf("%d", resultado);
+        int numero;
+        scanf("%d", &numero);
+        
+        if(numero % 2 == 0)
+                numero = numero + 1;
+        else
+                numero = numero - 1;
+        
+        printf("%d", numero);
 
 <br>
 
@@ -15,17 +21,21 @@ complexidade de pior caso $(O)$ do trecho:
 
 ##### Quantidade de intruções:
 
-O trecho do código anterior possui *3 instruções* ao total.
+O trecho do código anterior possui *5 instruções* ao total.
 
 ##### Complexidade:
 
 Código | Complexidade
 :----- | :----------:
-`int x = 0;`| $O(1)$
-`x = x + 1;`| $O(1)$
-`printf("%d", resultado);`| $O(1)$
+`int numero;`| $O(1)$
+`scanf("%d", &numero);`| $O(1)$
+`if(numero % 2 == 0);`| $O(1)$
+`numero = numero + 1; ou numero = numero - 1;`| $O(1)$
+`printf("%d", numero);`| $O(1)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+Portanto, temos:
+
+$ T(n) = O(1) + O(1) + O(1) + O(1) + O(1) = O(1)$
 
 
 

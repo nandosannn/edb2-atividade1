@@ -25,7 +25,9 @@ Código | Complexidade
 `x = x + 1;`| $O(1)$
 `printf("%d", resultado);`| $O(1)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+Portanto, temos:
+
+$T(n)= O(1) + O(1) + O(1) = O(1)$
 
 
 
