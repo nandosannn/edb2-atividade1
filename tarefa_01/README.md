@@ -27,7 +27,11 @@ Código | Complexidade
 
 Portanto, temos:
 
-$T(n)= O(1) + O(1) + O(1) = O(1)$
+$T(n)= 1+1+1$
+
+$= 3$
+
+$= O(1)$
 
 
 

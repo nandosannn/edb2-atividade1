@@ -1,13 +1,15 @@
-# Tarefa 01
+# Tarefa 14
 
 ## :question: Problema:
 
 Calcule as quantidades de instruções, bem como a
 complexidade de pior caso $(O)$ do trecho:
 
-        int x = 0;
-        x = x + 1;
-        printf("%d", resultado);
+        int n = 5;
+        int num[n];
+        for(int i = 0; i < n; i++)
+                if(num[i] % 2 == 0)
+                        printf("%d", num[i]);
 
 <br>
 
@@ -15,17 +17,51 @@ complexidade de pior caso $(O)$ do trecho:
 
 ##### Quantidade de intruções:
 
-O trecho do código anterior possui *3 instruções* ao total.
+Código | Instruções
+:----- | :----------:
+`int n = 5;`| *1 instrução*
+`int num[n];`| *1 instrução*
+`int i = 0;`| *1 instruções* 
+`i < n;`| $n + 1$ *instruções*
+`i++`| $n$ *instruções*
+`if(num[i] % 2 == 0)`| $n$ *instruções*
+`printf("%d", num[i]);`| $n$ *instruções*
+
+Então, $x$ sendo o número total de instruções, temos:
+
+$x = 1 + 1 + 1 + (n+1) + n + n + n$
+
+$= 4 + 4n$
+
+Como $n=5$, temos:
+
+$x=4+4.5$
+
+$=4+20$
+
+$=24$
+
+Portanto, são $24$ instruções* ao total.
 
 ##### Complexidade:
 
-Código | Complexidade
+Código | Instruções
 :----- | :----------:
-`int x = 0;`| $O(1)$
-`x = x + 1;`| $O(1)$
-`printf("%d", resultado);`| $O(1)$
+`int n = 5;`| $O(1)$
+`int num[n];`| $O(1)$
+`int i = 0;`| $O(1)$ 
+`i < n;`| $O(1) + O(n)$ 
+`i++`| $O(n)$
+`if(num[i] % 2 == 0)`| $O(n)$
+`printf("%d", num[i]);`| $O(n)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+Portanto, temos:
+
+$T(n) = 1 + 1 + 1 + (n+1) + n + n + n$
+
+$= 4 + 4n$
+
+$= O(n)$
 
 
 

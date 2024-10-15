@@ -5,9 +5,9 @@
 Calcule as quantidades de instruções, bem como a
 complexidade de pior caso $(O)$ do trecho:
 
-        int x = 0;
-        x = x + 1;
-        printf("%d", resultado);
+        for(int i = 0; i < n; i++)
+                for(int j = 0; j < n; j++)
+                        printf("%d", j);
 
 <br>
 
@@ -15,17 +15,43 @@ complexidade de pior caso $(O)$ do trecho:
 
 ##### Quantidade de intruções:
 
-O trecho do código anterior possui *3 instruções* ao total.
+Código | Instruções
+:----- | :----------:
+`int i = 0`| *1 instrução*
+`i < n;`| $n + 1$ *instruções*
+`i++`| *n instruções* 
+`int j = 0;`| *n instruções*
+`j < n;`| $n(n+1)$ *instruções*
+`j++`| $n.n$ *instruções*
+`printf("%d", j);`| $n.n$ *instruções*
+
+Então, $x$ sendo o número total de instruções, temos:
+
+$x = 1 + n +1 + n + n(1 + n + 1 + n + n)$
+
+$= 2 + 4n + 3n²$
+
+Portanto, são *$2 + 4n + 3n²$ instruções* ao total.
 
 ##### Complexidade:
 
-Código | Complexidade
+Código | Instruções
 :----- | :----------:
-`int x = 0;`| $O(1)$
-`x = x + 1;`| $O(1)$
-`printf("%d", resultado);`| $O(1)$
+`int i = 0`| $O(1)$
+`i < n;`| $O(n) + O(1)$
+`i++`| $O(n)$
+`int j = 0;`| $O(n)$
+`j < n;`| $O(n²) + O(n)$
+`j++`| $O(n²)$
+`printf("%d", j);`| $O(n²)$
 
-Portanto, a complexidade do trecho é $O(1)$.
+Portanto, temos:
+
+$T(n) = 1+n+1+n+n+n²+n+n²+n²$
+
+$= 2 + 4n + 3n²$
+
+$= O(n²)$
 
 
 
