@@ -22,4 +22,4 @@ Atividade de análise de algoritmo da disciplina Estrutura de Dados II do curso 
 - [Tarefa15](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_15)
 
 ## Autor
-[Fernando Silva dos Santos]()
+[Fernando Silva dos Santos](https://github.com/nandosannn)
