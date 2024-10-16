@@ -35,7 +35,11 @@ Código | Complexidade
 
 Portanto, temos:
 
-$ T(n) = O(1) + O(1) + O(1) + O(1) + O(1) = O(1)$
+$T(n) = 1 + 1 + 1 + 1 + 1$
+
+$= 5$
+
+$= O(1)$
 
 
 

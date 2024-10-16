@@ -15,11 +15,11 @@ Atividade de análise de algoritmo da disciplina Estrutura de Dados II do curso 
 - [Tarefa8](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_08)
 - [Tarefa9](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_09)
 - [Tarefa10](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_10)
-- [Tarefa11]()
-- [Tarefa12]()
-- [Tarefa13]()
-- [Tarefa14]()
-- [Tarefa15]()
+- [Tarefa11](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_11)
+- [Tarefa12](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_12)
+- [Tarefa13](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_13)
+- [Tarefa14](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_14)
+- [Tarefa15](https://github.com/nandosannn/edb2-atividade1/tree/main/tarefa_15)
 
 ## Autor
 [Fernando Silva dos Santos]()
